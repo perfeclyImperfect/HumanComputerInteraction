@@ -1,0 +1,284 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #f6f6f6;
+    font-family: 'Lora', serif;
+}
+
+header {
+    background: #141818;
+    height: 66px;
+}
+
+header * {
+    color: white;
+}
+
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2em;
+}
+
+header .logo-text {
+    margin: 9px;
+    font-family: 'Candal', sans-serif;
+}
+
+header .logo-text a {
+    text-decoration: none;
+}
+
+header .logo-text span {
+    color: #1ec4da;
+}
+
+header ul {
+    float: right;
+}
+
+header .menu-toggle {
+    display: none;
+}
+
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    right: 0px;
+    width: 180px;
+    display: none;
+}
+
+header ul li:hover ul {
+    display: block;
+}
+
+header ul li ul li {
+    width: 100%;
+}
+
+header ul li ul li a {
+    padding: 10px;
+    color: #444;
+    background: white;
+}
+
+header ul li ul li .logout {
+    color: red;
+}
+
+header ul li ul li a:hover {
+    background: #a6a8a9;
+}
+
+header ul li a{
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header ul li a:hover {
+    background: #343a39;
+    transition: 0.5s;
+}
+
+.clearfix{
+    clear: both;
+    float: none;
+}
+
+
+/* header ends here */
+
+.page-wrapper {
+    display: flex;
+    height: calc(100% - 66px);
+}
+
+/* Left side bar */
+
+.page-wrapper .left-sidebar {
+    flex: 2;
+    height: 100%;
+    background: #333a3b;
+}
+
+.page-wrapper .left-sidebar ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    color: aliceblue;
+}
+
+.page-wrapper .left-sidebar ul li a {
+    padding: 10%;
+    display: block;
+    font-size: 20px;
+    border-bottom: 1px solid #141818;
+}
+
+.page-wrapper .left-sidebar ul li a:hover {
+    background: #141818;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.page-wrapper .content {
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow-y: scroll;
+}
+
+.content {
+    background-color: #ececec;
+}
+
+.content .page-title {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #25545a;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 1.1rem;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #d3d3d3;
+}
+
+.btn {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0px;
+    font-family: Georgia;
+    color: #ffffff;
+    font-size: 12px;
+    background: #25545a;
+    padding: 5px 12px 5px 12px;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #122726;
+    background-image: -webkit-linear-gradient(top, #122726, #122726);
+    background-image: -moz-linear-gradient(top, #122726, #122726);
+    background-image: -ms-linear-gradient(top, #122726, #122726);
+    background-image: -o-linear-gradient(top, #122726, #122726);
+    background-image: linear-gradient(to bottom, #122726, #122726);
+    text-decoration: none;
+  }
+
+  .text-center {
+      text-align: center;
+  }
+
+  .container {
+      margin: auto;
+      width: 500px;
+      max-width: 90%;
+  }
+
+  .container form {
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      background: #d3d3d3;
+      border-radius: 4px;
+      box-shadow: 0 8px 16px rgba(0,0,0,.3);
+  }
+
+  .succes{
+      color: rgb(24, 194, 24);
+  }
+
+  .error{
+      color: red;
+  }
+  .upper-content {
+      height: 30%;
+      color: #122726;
+  }
+
+  .col-4 {
+      width: 21%;
+      float: right;
+      margin: 2%;
+      height: 80%;
+      background: white;
+      border-radius: 15px;
+  }
+
+  .col-4 .row-up {
+      margin-top: 20%;
+      height: 30%;
+      border-radius: 15px;
+      font-size: 15px;
+  }
+
+  .col-4 .row-down {
+      height: 50%;
+      border-radius: 15px;
+  }
+
+  .lower-content {
+      height: 70%;
+      margin: 1%;
+      color: #122726;
+  }
+
+  .col-2 {
+      float: left;
+      height: 100%;
+      margin: 1%;
+      padding: 0;
+      width: 48%;
+      background: white;
+      border-radius: 15px;
+  }
+
+  .content1 {
+    padding: 5px;
+    height: 85%;
+    overflow-y: scroll;
+  }
+
+  .content1 table {
+    font-size: 15px;
+  }
+
+  .content2 {
+    padding: 5px;
+    height: 85%;
+    overflow-y: scroll;
+  }
+  .content2 table {
+    font-size: 15px;
+  }
+
+  .content3 table {
+      font-size: 10px;
+  }
